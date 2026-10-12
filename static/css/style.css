@@ -30,6 +30,9 @@ nav {
     background: rgba(255, 255, 255, 0.3);
     padding: 20px 40px;
     backdrop-filter: blur(5px);
+    display: flex; /* Делаем flex для выравнивания */
+    justify-content: space-between; /* Разносим элементы по краям */
+    align-items: center; /* Центрируем по вертикали */
 }
 
 nav a {
@@ -43,12 +46,24 @@ nav a {
 
 nav a:hover { opacity: 0.7; }
 
+/* Стили для контакта */
+.nav-contact {
+    margin-left: auto; /* Прижимает контакт к правому краю */
+}
+
+.nav-contact a {
+    margin-right: 0; /* Убираем лишний отступ у последнего элемента */
+
+    font-family: 'Russo One', sans-serif;
+    color: var(--main-text-color);
+}
+
 .container {
     max-width: 1400px;
     margin: 50px auto;
     padding: 0 40px;
     text-align: justify;
-    text-align-last: justify;
+    text-align-last: left; /* <-- ИЗМЕНИТЬ ЗДЕСЬ: было justify, стало left */
 }
 
 .intro-section { margin-bottom: 50px; }
@@ -108,6 +123,8 @@ nav a:hover { opacity: 0.7; }
     box-shadow: 0 15px 40px rgba(78, 63, 80, 0.15);
 }
 
+
+
 .card h3 {
     font-size: 32px;
     margin-bottom: 10px;
@@ -116,9 +133,13 @@ nav a:hover { opacity: 0.7; }
 
 .card p {
     font-size: 20px;
-    margin: 0;
+    margin: 0 auto; /* Центрируем блок */
     opacity: 0.9;
     line-height: 1.3;
+    text-align: justify; /* Выравнивание по ширине */
+    text-align-last: left; /* Последняя строка по левому краю */
+    max-width: 85%; /* Ограничиваем ширину блока */
+    display: block;
 }
 
 /* ========================================== */
@@ -171,6 +192,7 @@ nav a:hover { opacity: 0.7; }
 
 /* Название пункта списка */
 .list-item-title {
+    color: var(--main-text-color);
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 8px;
@@ -183,39 +205,51 @@ nav a:hover { opacity: 0.7; }
     line-height: 1.4;
 }
 
+
 /* ========================================== */
 /* Страница Вишлист                            */
 /* ========================================== */
 
 .wishlist-container {
-    background-color: var(--main-text-color); /* #5E748F */
+    background-color: var(--main-text-color);
     min-height: 100vh;
-    padding: 40px;
+    padding: 30px 10px; /* Минимальные боковые отступы */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Шапка только для вишлиста */
 .wishlist-container nav {
-    background-color: var(--bg-color); /* #CBCBCA */
+    background-color: var(--bg-color);
     border-radius: 20px;
-    margin-bottom: 40px;
-    padding: 20px 40px;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    max-width: 1100px; /* Шире */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .wishlist-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1400px;
+    gap: 20px;
+    max-width: 1100px; /* Существенно шире */
     margin: 0 auto;
+    width: calc(100% - 20px); /* Почти на всю ширину */
 }
 
 .gift-card {
-    background-color: var(--card-bg); /* #D9D9D9 */
-    border-radius: 30px;
-    padding: 30px;
+    background-color: var(--card-bg);
+    border-radius: 25px;
+    padding: 15px; /* Уменьшил отступы */
     display: flex;
     flex-direction: column;
     transition: transform 0.3s, box-shadow 0.3s;
+    height: 680px;; /* Увеличил высоту */
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .gift-card:hover {
@@ -223,83 +257,111 @@ nav a:hover { opacity: 0.7; }
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-.gift-card.reserved {
-    opacity: 0.7;
-}
-
 .gift-title {
     font-family: 'Russo One', sans-serif;
-    font-size: 32px;
+    font-size: 22px;
     color: var(--body-text-color);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-transform: lowercase;
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
 }
 
 .gift-photo-container {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .gift-photo {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    aspect-ratio: 3 / 4; /* Строгие пропорции 3:4 */
+    object-fit: cover; /* Заполняет блок без полей */
     border-radius: 20px;
-}
-
-.reserved-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #E74C3C;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 15px;
-    font-size: 20px;
-    font-weight: 500;
+    display: block;
 }
 
 .gift-info {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 20px;
-    gap: 15px;
+    margin-bottom: 0;
+    gap: 10px;
+    min-height: 90px;
+    min-width: 0;
 }
 
 .gift-description {
-    font-size: 24px;
+    font-size: 19px;
     text-align: left;
     flex: 1;
-    margin: 0;
+    margin: 0 0 0px 0;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    min-width: 0;
+    max-height: 120px; /* Ограничиваем высоту блока описания */
+    overflow-y: auto; /* Добавляем вертикальную прокрутку */
+    padding-right: 5px; /* Небольшой отступ для скроллбара */
+    direction: rtl;
+    padding-left: 12px; /* Отступ между текстом и полосой прокрутки (слева) */
+    padding-bottom: 15px; /* Отступ между текстом и кнопками */
+    box-sizing: border-box;
+}
+
+.gift-description > * {
+    direction: ltr; /* Текст остаётся слева направо */
+}
+
+.gift-description::-webkit-scrollbar {
+    width: 4px;
+}
+
+.gift-description::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.gift-description::-webkit-scrollbar-thumb {
+    background: rgba(78, 63, 80, 0.3);
+    border-radius: 2px;
 }
 
 .gift-price {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 500;
     color: var(--main-text-color);
     margin: 0;
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .gift-buttons {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     margin-top: auto;
+    flex-shrink: 0;
+    width: 100%; /* Кнопки на всю ширину */
 }
 
 .btn {
     flex: 1;
-    padding: 15px 20px;
+    padding: 12px 10px; /* Чуть меньше padding */
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     font-family: 'Unbounded', sans-serif;
-    font-size: 24px;
+    font-size: 17px; /* Чуть меньше текст */
     cursor: pointer;
     transition: all 0.3s;
     text-decoration: none;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden; /* Чтобы текст не вылезал */
+    text-overflow: ellipsis;
 }
 
 .btn-buy {
@@ -324,4 +386,20 @@ nav a:hover { opacity: 0.7; }
 
 .btn-reserve:active {
     transform: translateY(0);
+}
+
+.gift-card.reserved {
+    opacity: 0.7;
+}
+
+.reserved-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #E74C3C;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
 }

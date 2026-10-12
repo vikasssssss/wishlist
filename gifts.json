@@ -1,26 +1,82 @@
 [
     {
-        "title": "подарок",
-        "description": "описание",
-        "price": "1500",
-        "link": "https://example.com",
-        "photo": "/static/images/gift1.jpg",
+        "title": "Худак Пиво Вместо Пар",
+        "description": "буду в нем на пары ходить, а так крутая группа ваще то",
+        "price": "5000",
+        "link": "https://yamakasiwear.ru/products/hudi-pivo-vmesto-100409",
+        "photo": "/static/images/pivo.jpg",
         "reserved": false
     },
     {
-        "title": "подарок",
-        "description": "описание",
-        "price": "2500",
-        "link": "https://example.com",
-        "photo": "/static/images/gift2.jpg",
+        "title": "Серьга зуб",
+        "description": "ОЧЕНЬ ХОЧУ ЗУБ В УХО",
+        "price": "400",
+        "link": "https://www.wildberries.ru/catalog/236363553/detail.aspx",
+        "photo": "/static/images/1_20261012143229.jpg",
         "reserved": false
     },
     {
-        "title": "подарок",
-        "description": "описание",
-        "price": "3000",
-        "link": "https://example.com",
-        "photo": "/static/images/gift3.jpg",
+        "title": "Монстр))))",
+        "description": "МонстрМонстрМонстрМонстрМонстрМонстр",
+        "price": "1400+-",
+        "link": "https://www.wildberries.ru/catalog/1221795419/detail.aspx?targetUrl=SN",
+        "photo": "/static/images/1_20261012144839.jpg",
+        "reserved": false
+    },
+    {
+        "title": "коврик для мыши",
+        "description": "мне нравится Сал, большой коврик будет удобен для моего стола",
+        "price": "1400",
+        "link": "https://ozon.ru/t/9oMo9Tz",
+        "photo": "/static/images/sally.jpg",
+        "reserved": false
+    },
+    {
+        "title": "Румынские мифы",
+        "description": "мне интересно узнать о мифах о вампирах, они одни из моих любимых сверхъестественных тварей",
+        "price": "730",
+        "link": "https://ozon.ru/t/a8NzTVA",
+        "photo": "/static/images/book.jpg",
+        "reserved": false
+    },
+    {
+        "title": "Rick And Morty Plush",
+        "description": "я люблю этот мультик, плюшевый Рик очень милый",
+        "price": "920",
+        "link": "https://www.ozon.ru/product/rick-and-morty-plush-tovary-i-kukly-v-stile-anime-5454357249/?at=1jWo1OuQ_pY4rDo4_v2MGz5DSrllK-ub&sh=J5qkV25Ekw",
+        "photo": "/static/images/rick.jpg",
+        "reserved": false
+    },
+    {
+        "title": "браслет",
+        "description": "это хайп",
+        "price": "150",
+        "link": "https://ozon.ru/t/wE4ffKQ",
+        "photo": "/static/images/hand.jpg",
+        "reserved": false
+    },
+    {
+        "title": "стикеры",
+        "description": "это медецинский хайп",
+        "price": "300",
+        "link": "https://ozon.ru/t/dwD11se",
+        "photo": "/static/images/pic.jpg",
+        "reserved": false
+    },
+    {
+        "title": "кольцо часы",
+        "description": "это часовой хайп(подсмотрела у подруги)",
+        "price": "500",
+        "link": "https://ozon.ru/t/5DIquWJ",
+        "photo": "/static/images/clock.jpg",
+        "reserved": false
+    },
+    {
+        "title": "кольцо мышь",
+        "description": "это ультра хайп и стиль, я люблю мышей",
+        "price": "200",
+        "link": "https://ozon.ru/t/zL0ytph",
+        "photo": "/static/images/bat.jpg",
         "reserved": false
     }
 ]
