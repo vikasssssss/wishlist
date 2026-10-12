@@ -3,16 +3,23 @@
 {% block title %}{{ card.title }} | Вишлист{% endblock %}
 
 {% block content %}
-<div class="container">
-    <a href="/" class="back-link">← На главную</a>
-    
-    <h1>{{ card.title }}</h1>
-    <p class="card-description">{{ card.description }}</p>
-    
-    <ul class="card-content-list">
+<div class="container card-detail-container">
+    <a href="/" class="back-link">На главную</a>
+
+    <!-- Заголовок по центру (стиль заголовка) -->
+    <h1 class="card-title">{{ card.title }}</h1>
+
+    <!-- Общее описание карточки под заголовком (стандартный текст, жирный) -->
+    <p class="card-main-description">{{ card.description }}</p>
+
+    <!-- Нумерованный список -->
+    <ol class="card-content-list">
         {% for item in card.content %}
-        <li>{{ item }}</li>
+        <li class="list-item">
+            <div class="list-item-title">{{ item.title }}</div>
+            <div class="list-item-desc">{{ item.description }}</div>
+        </li>
         {% endfor %}
-    </ul>
+    </ol>
 </div>
 {% endblock %}

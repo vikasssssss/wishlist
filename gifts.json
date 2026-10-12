@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "title": "подарок",
+        "description": "описание",
+        "price": "1500",
+        "link": "https://example.com",
+        "photo": "/static/images/gift1.jpg",
+        "reserved": false
+    },
+    {
+        "title": "подарок",
+        "description": "описание",
+        "price": "2500",
+        "link": "https://example.com",
+        "photo": "/static/images/gift2.jpg",
+        "reserved": false
+    },
+    {
+        "title": "подарок",
+        "description": "описание",
+        "price": "3000",
+        "link": "https://example.com",
+        "photo": "/static/images/gift3.jpg",
+        "reserved": false
+    }
+]

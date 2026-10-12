@@ -1,18 +1,80 @@
 {% extends "base.html" %}
 
-{% block title %}Мой Вишлист{% endblock %}
+{% block title %}Вишлист{% endblock %}
 
 {% block content %}
-<div class="container">
-    <h1> Мой список желаний</h1>
-    <p>Выберите подарок и нажмите "Забронировать", чтобы другие гости видели, что он уже занят.</p>
+<div class="wishlist-container">
+    <div class="wishlist-grid">
+        {% for gift in gifts %}
+            {# Проверяем, забронирован ли подарок #}
+            {% set is_reserved = loop.index0|string in bookings %}
+            {% set current_booker = bookings[loop.index0|string] if is_reserved else '' %}
 
-    <!-- Сюда на следующем этапе подставим карточки подарков из gifts.json -->
-    <div id="gifts-list" class="gifts-grid">
-        <!-- Заглушка для визуализации -->
-        <div class="gift-card placeholder">
-            <p>Здесь будут карточки подарков...</p>
-        </div>
+            <div class="gift-card {% if is_reserved %}reserved{% endif %}">
+                <h3 class="gift-title">{{ gift.title }}</h3>
+
+                <div class="gift-photo-container">
+                    <img src="{{ gift.photo }}" alt="{{ gift.title }}" class="gift-photo">
+                    {% if is_reserved %}
+                    <div class="reserved-badge">Забронировано</div>
+                    {% endif %}
+                </div>
+
+                <div class="gift-info">
+                    <p class="gift-description">{{ gift.description }}</p>
+                    <p class="gift-price">{{ gift.price }} ₽</p>
+                </div>
+
+                <div class="gift-buttons">
+                    <a href="{{ gift.link }}" target="_blank" class="btn btn-buy">Купить</a>
+
+                    {% if is_reserved %}
+                        <button class="btn btn-unreserve" onclick="toggleReserve({{ loop.index0 }}, true, '{{ current_booker }}')">
+                            Снять бронь
+                        </button>
+                    {% else %}
+                        <button class="btn btn-reserve" onclick="toggleReserve({{ loop.index0 }}, false, '')">
+                            Забронировать
+                        </button>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </div>
+
+<script>
+    function getBookerId(giftId) {
+        let id = localStorage.getItem('wishlist_booker_' + giftId);
+        if (!id) {
+            id = 'user_' + Math.random().toString(36).substr(2, 9);
+            localStorage.setItem('wishlist_booker_' + giftId, id);
+        }
+        return id;
+    }
+
+    function toggleReserve(giftId, isCurrentlyReserved, existingBookerId) {
+        const myBookerId = getBookerId(giftId);
+        const action = isCurrentlyReserved ? 'unreserve' : 'reserve';
+
+        fetch('/api/reserve/' + giftId, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                action: action,
+                booker_id: myBookerId
+            })
+        })
+        .then(response => {
+            if (response.status === 403) {
+                alert('Этот подарок уже забронирован другим человеком. Вы не можете снять эту бронь.');
+                return null;
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data) location.reload();
+        });
+    }
+</script>
 {% endblock %}
