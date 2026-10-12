@@ -166,5 +166,13 @@
         "link": "https://www.wildberries.ru/catalog/239471939/detail.aspx?size=376591081",
         "photo": "/static/images/4_20261012171321.jpg",
         "reserved": false
+    },
+    {
+        "title": "клавиатура",
+        "description": "хочу механику, вроде неплохая, самые классные клавы светлые(((",
+        "price": "5000",
+        "link": "https://ozon.ru/t/qtSRRBs",
+        "photo": "/static/images/4_20261012171321.jpg",
+        "reserved": false
     }
 ]
