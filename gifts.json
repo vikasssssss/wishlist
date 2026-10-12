@@ -153,7 +153,7 @@
     },
     {
         "title": "серьги ножницы",
-        "description": "мне будо разрежут ухо, хайп и стиль",
+        "description": "мне будто разрежут ухо, хайп и стиль",
         "price": "250",
         "link": "https://www.wildberries.ru/catalog/734722735/detail.aspx?size=1041113760",
         "photo": "/static/images/1_20261012171247.jpg",
@@ -161,7 +161,7 @@
     },
     {
         "title": "постер НЛО",
-        "description": "я рептилоид, нло ми кенты, а вы не знали",
+        "description": "я рептилоид, нло мои кенты, а вы не знали",
         "price": "250",
         "link": "https://www.wildberries.ru/catalog/239471939/detail.aspx?size=376591081",
         "photo": "/static/images/4_20261012171321.jpg",
@@ -169,10 +169,10 @@
     },
     {
         "title": "клавиатура",
-        "description": "хочу механику, вроде неплохая, самые классные клавы светлые(((",
+        "description": "хочу механику, вроде неплохая, самые классные клавы к сожалению светлые",
         "price": "5000",
         "link": "https://ozon.ru/t/qtSRRBs",
-        "photo": "/static/images/4_20261012171321.jpg",
+        "photo": "/static/images/9778472160_20261012185716.png",
         "reserved": false
     }
 ]
