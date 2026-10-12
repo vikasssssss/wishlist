@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{ card.title }} | Вишлист{% endblock %}
+
+{% block content %}
+<div class="container">
+    <a href="/" class="back-link">← На главную</a>
+    
+    <h1>{{ card.title }}</h1>
+    <p class="card-description">{{ card.description }}</p>
+    
+    <ul class="card-content-list">
+        {% for item in card.content %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

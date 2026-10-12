@@ -1,8 +1,36 @@
 {% extends "base.html" %}
 
-{% block title %}Обо мне{% endblock %}
+{% block title %}Главная | Вишлист{% endblock %}
 
 {% block content %}
-<h1>Привет! Это моя главная страница</h1>
-<p>Здесь будет информация обо мне и рекомендации для подарков.</p>
+<div class="container">
+
+    <!-- Приветствие: отдельная строка, выравнивание влево -->
+    <section class="intro-section">
+        <p class="greeting-text">Привет, я Вика</p>
+        <p>Мой сайт - список желаемых мною вещей, которые вы можете подарить, если у вас вдруг возникли трудности</p>
+    </section>
+
+    <!-- Блок 2/3 + 1/3 -->
+    <div class="about-grid">
+        <div class="about-text">
+            <p>На странице “вишлист” Вы можете посмотреть конкретные вещи и ссылки на них на Озоне/Вб, а на этой страничке Вы можете почитать про мои увлечения и предпочтения в подарках, если вдруг хотите выбрать самостоятельно</p>
+        </div>
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Мое фото" class="about-photo">
+        </div>
+    </div>
+
+    <!-- Карточки -->
+    <div class="cards-grid">
+        {% for card in cards %}
+        <a href="/card/{{ loop.index0 }}" class="card-link">
+            <div class="card">
+                <h3>{{ card.title }}</h3>
+                <p>{{ card.description }}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
