@@ -78,5 +78,93 @@
         "link": "https://ozon.ru/t/zL0ytph",
         "photo": "/static/images/bat.jpg",
         "reserved": false
+    },
+    {
+        "title": "книга Готика",
+        "description": "мне нравиться изучать готическую историю, и архитектуру и субкультуру и моду",
+        "price": "—",
+        "link": "https://nlobooks.ru/books/biblioteka_zhurnala_teoriya_mody/6225/",
+        "photo": "/static/images/gothic.jpg",
+        "reserved": false
+    },
+    {
+        "title": "детективное судоку",
+        "description": "я люблю судоку, а такая форма очень интересна",
+        "price": "300",
+        "link": "https://www.wildberries.ru/catalog/965874772/detail.aspx?size=1447996314",
+        "photo": "/static/images/sudoku.jpg",
+        "reserved": false
+    },
+    {
+        "title": "футболка мотылёк",
+        "description": "я люблю мотыльков, очень сильно, размер XL - XXL, люблю оч большие",
+        "price": "1700",
+        "link": "https://www.wildberries.ru/catalog/405862416/detail.aspx?size=584163495",
+        "photo": "/static/images/tshirt.jpg",
+        "reserved": false
+    },
+    {
+        "title": "фигурка Салли + Ларри",
+        "description": "я (не)фанатка Салли Фейс и хотела бы себе еще одну фигурку",
+        "price": "500",
+        "link": "https://www.wildberries.ru/catalog/243301916/detail.aspx?size=381851816",
+        "photo": "/static/images/sal.jpg",
+        "reserved": false
+    },
+    {
+        "title": "учение  цвете",
+        "description": "люблю историю искусств и мне интересны цвета",
+        "price": "250",
+        "link": "https://www.wildberries.ru/catalog/26784344/detail.aspx?size=61640804",
+        "photo": "/static/images/gete.jpg",
+        "reserved": false
+    },
+    {
+        "title": "египетская книга мертвых",
+        "description": "хочу и че",
+        "price": "300",
+        "link": "https://www.wildberries.ru/catalog/8655770/detail.aspx?size=29205101",
+        "photo": "/static/images/egipt.jpg",
+        "reserved": false
+    },
+    {
+        "title": "кольцо череп",
+        "description": "люблю кольца, а кольца с черепами хайп",
+        "price": "530",
+        "link": "https://www.wildberries.ru/catalog/10322506/detail.aspx?size=33494329",
+        "photo": "/static/images/ring.jpg",
+        "reserved": false
+    },
+    {
+        "title": "книга Лавкрафта",
+        "description": "у него очень интересные книги, я искренне люблю этого писателя",
+        "price": "250",
+        "link": "https://www.wildberries.ru/catalog/92447902/detail.aspx?size=148406841",
+        "photo": "/static/images/laf.jpg",
+        "reserved": false
+    },
+    {
+        "title": "история искусств",
+        "description": "люблю",
+        "price": "900",
+        "link": "https://www.wildberries.ru/catalog/6947539/detail.aspx?size=24184381",
+        "photo": "/static/images/iskys.jpg",
+        "reserved": false
+    },
+    {
+        "title": "серьги ножницы",
+        "description": "мне будо разрежут ухо, хайп и стиль",
+        "price": "250",
+        "link": "https://www.wildberries.ru/catalog/734722735/detail.aspx?size=1041113760",
+        "photo": "/static/images/1_20261012171247.jpg",
+        "reserved": false
+    },
+    {
+        "title": "постер НЛО",
+        "description": "я рептилоид, нло ми кенты, а вы не знали",
+        "price": "250",
+        "link": "https://www.wildberries.ru/catalog/239471939/detail.aspx?size=376591081",
+        "photo": "/static/images/4_20261012171321.jpg",
+        "reserved": false
     }
 ]
