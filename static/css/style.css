@@ -226,6 +226,7 @@ nav a:hover { color: #CBCBCA; }
     /* Только правый вензель через background */
     background-image: url('/static/images/a28a1c027ebbd95c459165b251a57052.svg');
     background-position: right top;
+    right: 0px;
     background-size: 750px auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -242,7 +243,7 @@ nav a:hover { color: #CBCBCA; }
     content: '';
     position: fixed;
     top: 0;
-    left: -50px;
+    left: 0px;
     width: 700px;
     height: 1100px; /* Высота вензеля, подстрой под свой */
     background-image: url('/static/images/a28a1c027ebbd95c459165b251a57052.svg');
