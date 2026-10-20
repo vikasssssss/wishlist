@@ -188,7 +188,7 @@
         "description": "минералы ввиде солнечной системы",
         "price": "700",
         "link": "https://ozon.ru/t/gmNV7Ye",
-        "photo": "/static/images/monster.png",
+        "photo": "/static/images/planet.png",
         "reserved": false
     },
     {
@@ -196,7 +196,7 @@
         "description": "это прикольно выглядит, я хочу его",
         "price": "350",
         "link": "https://ozon.ru/t/5D0TGXW",
-        "photo": "/static/images/monster.png",
+        "photo": "/static/images/monster_plush.png",
         "reserved": false
     },
     {
@@ -204,7 +204,7 @@
         "description": "я люблю минералы, хочу это в коллекцию",
         "price": "300",
         "link": "https://ozon.ru/t/dwL3Cfp",
-        "photo": "/static/images/monster.png",
+        "photo": "/static/images/mineral.png",
         "reserved": false
     },
     {
@@ -212,7 +212,7 @@
         "description": "треугольный набор минералов",
         "price": "200",
         "link": "https://ozon.ru/t/3Qqrr2q",
-        "photo": "/static/images/monster.png",
+        "photo": "/static/images/triangle.png",
         "reserved": false
     },
      {
@@ -220,7 +220,7 @@
         "description": "это очень необычная книжка, картинки безумно красивые",
         "price": "1200",
         "link": "https://ozon.ru/t/BShAKe9",
-        "photo": "/static/images/monster.png",
+        "photo": "/static/images/vampire.png",
         "reserved": false
     }
     
