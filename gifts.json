@@ -180,7 +180,48 @@
         "description": "брелки монстер, оч хочу",
         "price": "100",
         "link": "https://ozon.ru/t/wECQ5Ms",
-        "photo": "/static/images/9778472160_20261012185716.png",
+        "photo": "/static/images/monster.png",
+        "reserved": false
+    },
+    {
+        "title": "планеты",
+        "description": "минералы ввиде солнечной системы",
+        "price": "700",
+        "link": "https://ozon.ru/t/gmNV7Ye",
+        "photo": "/static/images/monster.png",
+        "reserved": false
+    },
+    {
+        "title": "плюшевая игрушка",
+        "description": "это прикольно выглядит, я хочу его",
+        "price": "350",
+        "link": "https://ozon.ru/t/5D0TGXW",
+        "photo": "/static/images/monster.png",
+        "reserved": false
+    },
+    {
+        "title": "набор минералов",
+        "description": "я люблю минералы, хочу это в коллекцию",
+        "price": "300",
+        "link": "https://ozon.ru/t/dwL3Cfp",
+        "photo": "/static/images/monster.png",
+        "reserved": false
+    },
+    {
+        "title": "набор минералов 2",
+        "description": "треугольный набор минералов",
+        "price": "200",
+        "link": "https://ozon.ru/t/3Qqrr2q",
+        "photo": "/static/images/monster.png",
+        "reserved": false
+    },
+     {
+        "title": "книга",
+        "description": "это очень необычная книжка, картинки безумно красивые",
+        "price": "1200",
+        "link": "https://ozon.ru/t/BShAKe9",
+        "photo": "/static/images/monster.png",
         "reserved": false
     }
+    
 ]
