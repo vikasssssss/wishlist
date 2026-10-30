@@ -199,12 +199,44 @@
         "photo": "/static/images/triangle.png",
         "reserved": false
     },
-     {
+    {
         "title": "книга",
         "description": "это очень необычная книжка, картинки безумно красивые",
         "price": "1200",
         "link": "https://ozon.ru/t/BShAKe9",
         "photo": "/static/images/vampire.png",
+        "reserved": false
+    },
+    {
+        "title": "постер",
+        "description": "хочу постер по сериалу",
+        "price": "200",
+        "link": "https://ozon.ru/t/wErohIS",
+        "photo": "/static/images/cognito.png",
+        "reserved": false
+    },
+    {
+        "title": "футболка",
+        "description": "размер XL",
+        "price": "600",
+        "link": "https://ozon.ru/t/pHFTUmR",
+        "photo": "/static/images/tshirt_regan.png",
+        "reserved": false
+    },
+    {
+        "title": "обложка на паспорт",
+        "description": "мне нравиться Алиса и мне нужна новая обложка",
+        "price": "250",
+        "link": "https://ozon.ru/t/ye5toxe",
+        "photo": "/static/images/pasport.png",
+        "reserved": false
+    },
+    {
+        "title": "обложка на студенческий",
+        "description": "нужна обложка...",
+        "price": "250",
+        "link": "https://ozon.ru/t/cFwBqEw",
+        "photo": "/static/images/studak.png",
         "reserved": false
     }
     
